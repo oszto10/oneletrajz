@@ -17,7 +17,9 @@ function MunkaTapasztalat() {
 
         </div>
         <div className='bemutatkozas'>
+        <div className="bemutatkozas-szoveg">
           <h1>Tapasztalat</h1>
+         
           <p><b>DIGI Sport - Online főszerkesztő</b> (digisport.hu, filmnow.hu, a digiworld.hu, a digilife.hu, digianimalword.hu) - <i>2009.07 – 2022.09</i></p>
             <p><b>Főbb feladatok:</b> <br />
               - 8 fős csoport vezetése <br />
@@ -35,7 +37,7 @@ function MunkaTapasztalat() {
           <p><b>Ringier Kiadó Kft, Nemzeti Sport szerkesztőség</b> - <i>2003.01.-2008.03.</i></p>
           <p>szerkesztő, sportújságíró
           </p>
-
+          </div>
         </div>
         </div>
     </div>

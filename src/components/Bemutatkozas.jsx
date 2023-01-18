@@ -24,8 +24,6 @@ function Bemutatkozas() {
         <div className="bemutatkozas-szoveg">
         <h1>Bemutatkozás</h1>
         <br />
-        <br />
-        <br />
         <p>“Fiatalabb koromban az élsport volt az egyik legfontosabb dolog az életemben, így a főiskolai tanulmányaim alatt a sportújságírásban találtam meg azokat a szakmai kihívásokat, amelyek mentén szerettem volna felépíteni a karrieremet. 
         <br />
         <br />
