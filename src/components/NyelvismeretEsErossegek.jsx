@@ -10,11 +10,13 @@ function NyelvismeretEsErossegek() {
         <div>
         <div className='kepkapcsolat'>
             <img src="images/profil.jpg" alt="profilkep"/>
-            <h3><b>Telefon:</b></h3>
-            <h3>+3620/931-81-36</h3>
-            <br />
-            <h3><b>Email:</b></h3>
+            <div className="contact">
+            <h3 className='contact-detail'><b>Telefon:</b></h3>
+            <h3 className='line'>+3620/931-81-36</h3>
+          
+            <h3 className='contact-detail'><b>Email:</b></h3>
             <h3>mark.csaszarnagy@gmail.com</h3>
+            </div>
 
         </div>
         <div className='bemutatkozas'>
@@ -34,9 +36,10 @@ function NyelvismeretEsErossegek() {
               <br />
               - Újságíró szak
               </p>
-              
+              <br />
           <h1>Nyelvtudás</h1>
           <p>Angol középfokú nyelvvizsga </p>
+          <br />
         <h1>Erősségek</h1>
         <p>Adobe Photoshop, Csapatmunka, Tanulás, Önképzés, Lojalitás, Segítőkészség</p>
         </div>

@@ -9,19 +9,20 @@ function MunkaTapasztalat() {
         <div>
         <div className='kepkapcsolat'>
             <img src="images/profil.jpg" alt="profilkep"/>
-            <h3><b>Telefon:</b></h3>
-            <h3>+3620/931-81-36</h3>
-            <br />
-            <h3><b>Email:</b></h3>
+            <div className="contact">
+            <h3 className='contact-detail'><b>Telefon:</b></h3>
+            <h3 className='line'>+3620/931-81-36</h3>
+          
+            <h3 className='contact-detail'><b>Email:</b></h3>
             <h3>mark.csaszarnagy@gmail.com</h3>
-
+            </div>
         </div>
         <div className='bemutatkozas'>
         <div className="bemutatkozas-szoveg">
           <h1>Tapasztalat</h1>
          
           <p><b>DIGI Sport - Online főszerkesztő</b> (digisport.hu, filmnow.hu, a digiworld.hu, a digilife.hu, digianimalword.hu) - <i>2009.07 – 2022.09</i></p>
-            <p><b>Főbb feladatok:</b> <br />
+            <p><b><i>Főbb feladatok:</i></b> <br />
               - 8 fős csoport vezetése <br />
               - a weblapokon történt fejlesztések tervezése, irányítása <br />
               - képek szerkesztése, egyszerűbb videók vágása <br />
