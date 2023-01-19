@@ -4,12 +4,14 @@ import Actors from './Actors';
 import Navbar from './Navbar';
 import './Bemutatkozas.css'
 import { Button } from '@mui/material/'
+import LoadingMask from './LoadingMask';
 
 
 function StarWars() {
 
     const [people, setPeople] = useState([]);
     const [sortBy, setSortBy] = useState("asc");
+    const [filter, setFilter] = useState('');
 
     const peopleFetch = () => {
         fetch("https://swapi.dev/api/people")
@@ -53,15 +55,24 @@ function StarWars() {
         </div>
         <div className='bemutatkozas'>
         <div className="actors">
-        <h1>Szereplők</h1>
+        <h1>Star Wars - Szereplők</h1>
+          <header>
+        <input placeholder='Search' value={filter} onChange={(event)=>{setFilter(event.target.value)}}/>
         <Button onClick={()=>{
         sortBy === "asc" ? setSortBy("desc") : setSortBy("asc");
     }} variant="contained">Sort by name</Button>
-        <Actors people={people}/>
+    </header>
+        {people.length > 0 ? (
+          <>
+        <Actors filter={filter} people={people}/>
+        </> ) : (
+          <LoadingMask />
+        )}
         </div>
         </div>
         </div>
     </div>
+
   )
 }
 

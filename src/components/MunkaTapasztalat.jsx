@@ -19,6 +19,7 @@ function MunkaTapasztalat() {
             </div>
         </div>
         
+        <div className='bemutatkozas'>
         <div className="bemutatkozas-szoveg">
           <h1>Tapasztalat</h1>
          
@@ -39,6 +40,7 @@ function MunkaTapasztalat() {
           <p><b>Ringier Kiadó Kft, Nemzeti Sport szerkesztőség</b> - <i>2003.01.-2008.03.</i></p>
           <p>szerkesztő, sportújságíró
           </p>
+          </div>
           </div>
         </div>
         
