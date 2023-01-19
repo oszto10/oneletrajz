@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar';
 import './Bemutatkozas.css'
+import './Navbar.css'
 
 function MunkaTapasztalat() {
   return (
     <div className='root'>
         <Navbar></Navbar>
-        <div>
+        <div className='container'>
         <div className='kepkapcsolat'>
             <img src="images/profil.jpg" alt="profilkep"/>
             <div className="contact">
@@ -17,7 +18,7 @@ function MunkaTapasztalat() {
             <h3>mark.csaszarnagy@gmail.com</h3>
             </div>
         </div>
-        <div className='bemutatkozas'>
+        
         <div className="bemutatkozas-szoveg">
           <h1>Tapasztalat</h1>
          
@@ -40,7 +41,7 @@ function MunkaTapasztalat() {
           </p>
           </div>
         </div>
-        </div>
+        
     </div>
   )
 }

@@ -3,6 +3,7 @@
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   background-color: rgb(96, 94, 94);
   color: rgb(247, 236, 236);

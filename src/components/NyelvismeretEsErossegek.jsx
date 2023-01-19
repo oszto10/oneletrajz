@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar';
-
 import './Bemutatkozas.css'
+import './Navbar.css'
 
 function NyelvismeretEsErossegek() {
   return (
     <div className='root'>
         <Navbar></Navbar>
-        <div>
+        <div className='container'>
         <div className='kepkapcsolat'>
             <img src="images/profil.jpg" alt="profilkep"/>
             <div className="contact">

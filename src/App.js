@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Bemutatkozas from "./components/Bemutatkozas";
 import MunkaTapasztalat from "./components/MunkaTapasztalat";
 import NyelvismeretEsErossegek from "./components/NyelvismeretEsErossegek";
+import StarWars from "./components/StarWars";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             path="/tanulmanyok&erossegek"
             element={<NyelvismeretEsErossegek />}
           />
+          <Route path="/starwars" element={<StarWars />} />
         </Routes>
       </BrowserRouter>
     </div>

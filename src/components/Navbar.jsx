@@ -8,7 +8,8 @@ function Navbar() {
     <div className='navbar'>
         <Link to="/">Bemutatkozás</Link>
         <Link to="/tapasztalat">Tapasztalat</Link>
-        <Link to="/tanulmanyok&erossegek">Tanulmányok és erősségek</Link>
+        <Link to="/tanulmanyok&erossegek">Tanulmányok</Link>
+        <Link to="/starwars">Star Wars</Link>
     </div>
   )
 }

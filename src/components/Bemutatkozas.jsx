@@ -10,7 +10,7 @@ function Bemutatkozas() {
     
     <div className='root'>
         <Navbar></Navbar>
-        <div>
+        <div className='container'>
         <div className='kepkapcsolat'>
             <img src="images/profil.jpg" alt="profilkep"/>
             <div className="contact">
