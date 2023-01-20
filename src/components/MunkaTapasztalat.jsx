@@ -2,22 +2,14 @@ import React from 'react'
 import Navbar from './Navbar';
 import './Bemutatkozas.css'
 import './Navbar.css'
+import KepEsKapcsolat from './KepEsKapcsolat';
 
 function MunkaTapasztalat() {
   return (
     <div className='root'>
         <Navbar></Navbar>
         <div className='container'>
-        <div className='kepkapcsolat'>
-            <img src="images/profil.jpg" alt="profilkep"/>
-            <div className="contact">
-            <h3 className='contact-detail'><b>Telefon:</b></h3>
-            <h3 className='line'>+3620/931-81-36</h3>
-          
-            <h3 className='contact-detail'><b>Email:</b></h3>
-            <h3>mark.csaszarnagy@gmail.com</h3>
-            </div>
-        </div>
+        <KepEsKapcsolat/>
         
         <div className='bemutatkozas'>
         <div className="bemutatkozas-szoveg">
