@@ -20,7 +20,7 @@ function MunkaTapasztalat() {
               - 8 fős csoport vezetése <br />
               - a weblapokon történt fejlesztések tervezése, irányítása <br />
               - képek szerkesztése, egyszerűbb videók vágása <br />
-              - social média kezelése (Facebook, Instagram és TokTok) <br />
+              - social média kezelése (Facebook, Instagram és TikTok) <br />
               - újságírói beosztás szervezése, heti munkaterv elkészítése <br />
               - új kollégák betanítása <br />
               - csatornák műsorainak szerkesztése és küldése <br />
