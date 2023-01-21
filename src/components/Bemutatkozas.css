@@ -39,9 +39,11 @@ body {
   margin-top: 23px;
   margin-left: 10px;
   margin-right: 1px;
+  padding-bottom: 2px;
   color: rgb(74, 74, 74);
   border-radius: 10px;
   box-shadow: 2px 2px grey;
+  min-height: fit-content;
 }
 
 .contact {
@@ -59,7 +61,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 10px;
-  min-height: 135px;
+  min-height: 220px;
 }
 
 .line {
@@ -262,6 +264,7 @@ img {
     width: 60%;
     margin: 0;
     margin-right: 10px;
+    height: fit-content;
   }
 
   .contact-detail {
