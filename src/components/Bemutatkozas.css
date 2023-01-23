@@ -15,6 +15,11 @@ body {
   background: transparent; /* make scrollbar transparent */
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .root {
   display: flex;
   flex-direction: column;
@@ -36,12 +41,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 19%;
+  width: 22%;
   background-color: lightgray;
   height: 88vh;
-  min-width: 260px;
+  min-width: 310px;
   font-family: "Open Sans", sans-serif;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-left: 10px;
   margin-right: 1px;
   padding-bottom: 2px;
@@ -59,9 +64,9 @@ body {
   box-shadow: 2px 2px rgb(247, 236, 236);
   color: rgb(247, 236, 236);
   border-radius: 5px;
-  padding: 2px 5px 2px 5px;
+  padding: 10px 5px 2px 5px;
   width: 90%;
-  height: 27vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -89,17 +94,28 @@ body {
 .bemutatkozas {
   flex-direction: column;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 78%;
-  background-color: rgb(250, 250, 249);
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 70%;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow: 2px 2px grey;
+  border-radius: 10px;
+  background-color: rgb(247, 236, 236);
+  box-sizing: border-box;
+
   height: fit-content;
-  margin-left: 5px;
-  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 5px;
   font-family: "Open Sans", sans-serif;
   color: rgb(74, 74, 74);
   padding-right: 20px;
   min-width: 260px;
+}
+
+.englishButton {
+  margin-top: 20px !important;
 }
 
 .bemutatkozas-szoveg {
@@ -107,13 +123,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 20px;
-  margin-top: 20px;
-  box-shadow: 2px 2px grey;
-  padding: 20px;
+  padding-bottom: 20px;
   width: 100%;
   height: fit-content;
-  border-radius: 10px;
   background-color: rgb(247, 236, 236);
   box-sizing: border-box;
 }
@@ -130,11 +142,12 @@ header {
 
 input {
   height: 50%;
-  width: 30%;
+  width: 33%;
   border: none;
   box-shadow: 2px 2px grey;
   border-radius: 10px;
   color: grey;
+  margin-left: 20px;
 }
 
 .actors {
@@ -144,11 +157,9 @@ input {
   justify-content: space-between;
   margin-left: 20px;
   margin-top: 20px;
-  box-shadow: 2px 2px grey;
-  padding: 20px;
   width: 100%;
   height: fit-content;
-  border-radius: 10px;
+
   background-color: rgb(247, 236, 236);
   box-sizing: border-box;
 }
@@ -204,7 +215,6 @@ h1 {
   padding: 2px 5px 2px 5px;
   display: flex;
   margin-left: 2%;
-  margin-top: 2%;
   margin-bottom: 10px;
 }
 
@@ -216,15 +226,24 @@ p {
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 700;
   margin-left: 4%;
-  font-size: 20px;
+  font-size: 32px;
+  margin-bottom: 1%;
 }
 
 h3 {
   margin-left: 2%;
   font-weight: 400;
   font-size: 16px;
+}
+
+h4 {
+  letter-spacing: 1.2;
+  font-weight: 400;
+  margin-left: 4%;
+  font-size: 20px;
+  margin-bottom: 6%;
 }
 
 img {

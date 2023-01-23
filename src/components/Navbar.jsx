@@ -6,9 +6,9 @@ import './Navbar.css'
 function Navbar() {
   return (
     <div className='navbar'>
-        <Link to="/">Bemutatkozás</Link>
-        <Link to="/tapasztalat">Tapasztalat</Link>
-        <Link to="/tanulmanyok&erossegek">Tanulmányok</Link>
+        <Link to="/">Introduction</Link>
+        <Link to="/tapasztalat">Experience</Link>
+        <Link to="/tanulmanyok&erossegek">Studies</Link>
         <Link to="/starwars">Star Wars</Link>
     </div>
   )

@@ -4,17 +4,45 @@ import Bemutatkozas from "./components/Bemutatkozas";
 import MunkaTapasztalat from "./components/MunkaTapasztalat";
 import NyelvismeretEsErossegek from "./components/NyelvismeretEsErossegek";
 import StarWars from "./components/StarWars";
+import { useState } from "react";
 
 function App() {
+  const [english, setEnglish] = useState(true);
+
+  const handleClick = () => {
+    setEnglish((oldState) => {
+      if (oldState === true) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+  };
+
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Bemutatkozas />} />
-          <Route path="/tapasztalat" element={<MunkaTapasztalat />} />
+          <Route
+            path="/"
+            element={
+              <Bemutatkozas handleClick={handleClick} english={english} />
+            }
+          />
+          <Route
+            path="/tapasztalat"
+            element={
+              <MunkaTapasztalat handleClick={handleClick} english={english} />
+            }
+          />
           <Route
             path="/tanulmanyok&erossegek"
-            element={<NyelvismeretEsErossegek />}
+            element={
+              <NyelvismeretEsErossegek
+                handleClick={handleClick}
+                english={english}
+              />
+            }
           />
           <Route path="/starwars" element={<StarWars />} />
         </Routes>

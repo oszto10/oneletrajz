@@ -46,7 +46,7 @@ function StarWars() {
         <KepEsKapcsolat/>
         <div className='bemutatkozas'>
         <div className="actors">
-        <h1>Star Wars - Szereplők</h1>
+        <h1>Star Wars - Cast</h1>
           <header>
         <input placeholder='Search' value={filter} onChange={(event)=>{setFilter(event.target.value)}}/>
         <Button onClick={()=>{
