@@ -8,7 +8,7 @@ import LoadingMask from './LoadingMask';
 import KepEsKapcsolat from './KepEsKapcsolat';
 
 
-function StarWars() {
+function StarWars({english, handleClick}) {
 
     const [people, setPeople] = useState([]);
     const [sortBy, setSortBy] = useState("asc");
@@ -41,7 +41,7 @@ function StarWars() {
 
 
     <div className='root'>
-        <Navbar></Navbar>
+        <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
         <KepEsKapcsolat/>
         <div className='bemutatkozas'>

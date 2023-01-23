@@ -3,19 +3,19 @@ import Navbar from './Navbar';
 import './Bemutatkozas.css'
 import './Navbar.css'
 import KepEsKapcsolat from './KepEsKapcsolat';
-import { Button } from '@mui/material';
+
 
 function NyelvismeretEsErossegek({english, handleClick}) {
   return (
     <div className='root'>
-        <Navbar></Navbar>
+       <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
         <KepEsKapcsolat/>
         <div className='bemutatkozas'>
-        <Button className='englishButton' variant='contained' onClick={()=> handleClick(!english)}>{english ? "Hungarian" : "English"}</Button>
+       
 
         <div className="bemutatkozas-szoveg">
-        {english && <><h1>Studies</h1>
+        {english && <><h1>Education</h1>
         <p>
             <b>Codecool - Junior Frontend Developer</b> - <i>August 2022 – January 2023</i>
               <br />
@@ -35,7 +35,7 @@ function NyelvismeretEsErossegek({english, handleClick}) {
           <p>Intermediate English language exam </p>
           <br />
         <h1>Strengths</h1>
-        <p>Adobe Photoshop, Teamwork, Self training, Eager to learn, Loyalty, Helpfulness</p></>}
+        <p>Strong writen and verbal communication skills, Eager to learn, Self-training, Teamwork, Loyalty</p></>}
         {!english && <><h1>Tanulmányok</h1>
           <p>
             <b>Codecool - Junior Frontend Developer</b> - <i>2022.08. – 2023.01.</i>
@@ -56,7 +56,7 @@ function NyelvismeretEsErossegek({english, handleClick}) {
           <p>Angol középfokú nyelvvizsga </p>
           <br />
         <h1>Erősségek</h1>
-        <p>Adobe Photoshop, Csapatmunka, Tanulás, Önképzés, Lojalitás, Segítőkészség</p></>}
+        <p>Adobe Photoshop, Csapatmunka, Tanulás, Önképzés, Lojalitás</p></>}
         </div>
         </div>
         </div>

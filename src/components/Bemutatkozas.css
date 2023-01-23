@@ -18,6 +18,7 @@ body {
 a {
   text-decoration: none;
   color: white;
+  margin-bottom: 5px;
 }
 
 .root {
@@ -43,17 +44,21 @@ a {
   justify-content: flex-start;
   width: 22%;
   background-color: lightgray;
-  height: 88vh;
-  min-width: 310px;
+  height: fit-content;
+  min-width: 350px;
   font-family: "Open Sans", sans-serif;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 10px;
   margin-right: 1px;
+  margin-bottom: 10px;
   padding-bottom: 2px;
   color: rgb(74, 74, 74);
   border-radius: 10px;
   box-shadow: 2px 2px grey;
   min-height: fit-content;
+}
+.name-pic {
+  height: fit-content;
 }
 
 .contact {
@@ -67,11 +72,11 @@ a {
   padding: 10px 5px 2px 5px;
   width: 90%;
   height: fit-content;
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-left: 10px;
-  min-height: 220px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  min-height: 250px;
 }
 
 .line {
@@ -86,9 +91,9 @@ a {
   border-radius: 5px;
   padding: 2px 2px 2px 2px;
   box-shadow: 2px 2px lightgray;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-top: 5px;
-  width: 95%;
+  width: 90%;
 }
 
 .bemutatkozas {
@@ -96,10 +101,10 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 70%;
+  width: 73%;
 
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   box-shadow: 2px 2px grey;
   border-radius: 10px;
   background-color: rgb(247, 236, 236);
@@ -115,7 +120,7 @@ a {
 }
 
 .englishButton {
-  margin-top: 20px !important;
+  margin-top: 10px !important;
 }
 
 .bemutatkozas-szoveg {
@@ -123,11 +128,12 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-bottom: 20px;
+  padding: 30px;
   width: 100%;
   height: fit-content;
   background-color: rgb(247, 236, 236);
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 header {
@@ -159,7 +165,7 @@ input {
   margin-top: 20px;
   width: 100%;
   height: fit-content;
-
+  padding-bottom: 10px;
   background-color: rgb(247, 236, 236);
   box-sizing: border-box;
 }
@@ -216,6 +222,7 @@ h1 {
   display: flex;
   margin-left: 2%;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 p {
@@ -236,6 +243,7 @@ h3 {
   margin-left: 2%;
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 1%;
 }
 
 h4 {
@@ -251,7 +259,7 @@ img {
   margin-left: 6%;
   margin-bottom: 5%;
   border-radius: 50%;
-  width: 80%;
+  width: 60%;
   border: 1px solid rgb(247, 236, 236);
   box-shadow: 2px 2px grey;
 }
@@ -259,6 +267,14 @@ img {
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 12px;
   }
 
   .container {
@@ -281,7 +297,12 @@ img {
   }
 
   img {
-    width: 30%;
+    width: 70%;
+  }
+
+  .englishButton {
+    margin-top: 10px !important;
+    margin-right: 10px !important;
   }
 
   .contact {

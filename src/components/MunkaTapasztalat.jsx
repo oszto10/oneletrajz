@@ -3,27 +3,26 @@ import Navbar from './Navbar';
 import './Bemutatkozas.css'
 import './Navbar.css'
 import KepEsKapcsolat from './KepEsKapcsolat';
-import { Button } from '@mui/material';
 
 function MunkaTapasztalat({english, handleClick}) {
   return (
     <div className='root'>
-        <Navbar></Navbar>
+        <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
         <KepEsKapcsolat/>
         
         <div className='bemutatkozas'>
-        <Button className='englishButton' variant='contained' onClick={()=> handleClick(!english)}>{english ? "Hungarian" : "English"}</Button>
+       
         <div className="bemutatkozas-szoveg">
         {english && <><h1>Experience</h1>
-        <p><b>DIGI Sport - Editor in Chief</b> (digisport.hu, filmnow.hu, a digiworld.hu, a digilife.hu, digianimalword.hu) - <i>July 2009 – September 2022</i></p>
+        <p><b>DIGI Sport - Editor-in-chief</b> (digisport.hu, filmnow.hu, a digiworld.hu, a digilife.hu, digianimalword.hu) - <i>July 2009 – September 2022</i></p>
            <p><b><i>Main tasks:</i></b> <br />
-             - leading a group of eight <br />
-             - planning and controlling the developments of the sites <br />
-             - editing pictures, cutting videos <br />
-             - controlling the work on DIGI Sports’s social media sites (Facebook, Instagram és TikTok) <br />
-             - organization the work schedule and the workflow of my team<br />
-             - training the new Collagues <br />
+             - leading a group of eight people <br />
+             - planning and controlling the development of the sites mentioned above <br />
+             - eediting photos and video footage <br />
+             - controlling the work on the social media sites of DIGI Sport (Facebook, Instagram and TikTok) <br />
+             - being responsible for the work rota and the weekly work plan<br />
+             - training new team members <br />
              </p>
              <br />
          <p><b>Generál Média Kft., SportHirado.hu</b> - <i> March 2008 - March 2009</i></p>

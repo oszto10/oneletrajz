@@ -44,7 +44,10 @@ function App() {
               />
             }
           />
-          <Route path="/starwars" element={<StarWars />} />
+          <Route
+            path="/starwars"
+            element={<StarWars handleClick={handleClick} english={english} />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
