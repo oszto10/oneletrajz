@@ -28,7 +28,7 @@ function Bemutatkozas({english, handleClick}) {
         After a few years, my interest in programming became stronger. So, I started to study on my own, however, at this time my position was editor-in-chief, therefore programming remained only hobby that I could pursue in my spare time. 
         <br />
         <br />
-        In the summer of 2022, the DIGI Sport channel where I worked for thirteen years, was closed by the new owners, so I decided to enrol in Codecool’s Junior Frontend Developer course. I was finally able
+        In the summer of 2022, the DIGI Sport channel where I worked for thirteen years, was closed by the new owners, so I decided to enroll in Codecool’s Junior Frontend Developer course. I was finally able
         to start building the carrier for which I have been longing for a long time. I really like the world of programming; the more I learn about it, the more I want to know.”
         </p></>}
         {!english && <><h1>Bemutatkozás</h1>

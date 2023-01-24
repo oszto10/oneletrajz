@@ -18,7 +18,7 @@ function KepEsKapcsolat() {
     <h3 className='line'>mark.csaszarnagy@gmail.com</h3>
 
     <h3 className='contact-detail'><b>LinkedIn:</b></h3>
-    <h3><a href="https://www.linkedin.com/in/m%C3%A1rk-cs%C3%A1sz%C3%A1r-nagy/">linkedin.com/in/márk.császár-nagy/</a></h3> 
+    <h3><a href="https://www.linkedin.com/in/mark-csaszar-nagy/">linkedin.com/in/mark.csaszar-nagy/</a></h3> 
 
     
     <h3 className='contact-detail'><b>GitHub:</b></h3>
