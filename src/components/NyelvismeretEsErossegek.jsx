@@ -10,7 +10,7 @@ function NyelvismeretEsErossegek({english, handleClick}) {
     <div className='root'>
        <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-        <KepEsKapcsolat/>
+        <KepEsKapcsolat handleClick={handleClick} english={english}/>
         <div className='bemutatkozas'>
        
 
@@ -19,7 +19,7 @@ function NyelvismeretEsErossegek({english, handleClick}) {
         <p>
             <b>Codecool - Junior Frontend Developer</b> - <i>August 2022 – January 2023</i>
               <br />
-              - HTML5, CSS3, SVG, JavaScript, React.js, Materiel UI, Node.js / NPM, Express.js, HTTP, Git, GitHub <br />
+              - HTML5, CSS3, SVG, JavaScript, React.js, Material UI, Node.js / NPM, Express.js, HTTP, Git, GitHub <br />
               <br />
               <b>The National Office of Vocational Education and Training and Adult Learning</b> - <i>May 2022 – July 2022</i>
               <br />
@@ -40,7 +40,7 @@ function NyelvismeretEsErossegek({english, handleClick}) {
           <p>
             <b>Codecool - Junior Frontend Developer</b> - <i>2022.08. – 2023.01.</i>
               <br />
-              - HTML5, CSS3, SVG, JavaScript, React.js, Materiel UI, Node.js / NPM, Express.js, HTTP, Git, GitHub <br />
+              - HTML5, CSS3, SVG, JavaScript, React.js, Material UI, Node.js / NPM, Express.js, HTTP, Git, GitHub <br />
               <br />
               <b>Nemzeti Szakképzési és Felnőttképzési Intézet</b> - <i>2022.05. – 2022.07.</i>
               <br />

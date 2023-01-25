@@ -15,7 +15,7 @@ function Bemutatkozas({english, handleClick}) {
     <div className='root'>
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-        <KepEsKapcsolat/>
+        <KepEsKapcsolat handleClick={handleClick} english={english}/>
         <div className='bemutatkozas'>
         
         <div className="bemutatkozas-szoveg">

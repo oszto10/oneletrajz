@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './Navbar';
 import './Bemutatkozas.css'
 import './Navbar.css'
+import { Select, MenuItem } from '@mui/material';
+import StarWars from "./components/StarWars";
 
 
 function Projektek() {
@@ -19,6 +21,11 @@ function Projektek() {
         </div>
         <div className='bemutatkozas'>
           <h1>PROJEKTEK</h1>
+          <Select>
+            <MenuItem>
+            <StarWars/>
+                        </MenuItem> 
+          </Select>
           
         </div>
         </div>

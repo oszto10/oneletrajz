@@ -43,12 +43,12 @@ function StarWars({english, handleClick}) {
     <div className='root'>
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-        <KepEsKapcsolat/>
+        <KepEsKapcsolat handleClick={handleClick} english={english}/>
         <div className='bemutatkozas'>
         <div className="actors">
         <h1>Star Wars - Cast</h1>
           <header>
-        <input placeholder='Search' value={filter} onChange={(event)=>{setFilter(event.target.value)}}/>
+        <input placeholder='Search' className='starwars-input'  value={filter} onChange={(event)=>{setFilter(event.target.value)}}/>
         <Button onClick={()=>{
         sortBy === "asc" ? setSortBy("desc") : setSortBy("asc");
     }} variant="contained">Sort by name</Button>
