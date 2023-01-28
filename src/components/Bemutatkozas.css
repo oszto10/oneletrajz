@@ -8,6 +8,7 @@
 body {
   width: 100%;
   height: 100vh;
+  background-color: #f1f6f9;
 }
 
 ::-webkit-scrollbar {
@@ -35,6 +36,8 @@ a {
   justify-content: flex-start;
   height: 92vh;
   width: 100%;
+  background-color: #f1f6f9;
+  height: fit-content;
 }
 
 .kepkapcsolat {
@@ -43,18 +46,15 @@ a {
   align-items: flex-start;
   justify-content: flex-start;
   width: 22%;
-  background-color: lightgray;
+  background-color: #394867;
   height: fit-content;
   min-width: 350px;
   font-family: "Open Sans", sans-serif;
-  margin-top: 10px;
+  border-radius: 10px;
   margin-left: 10px;
   margin-right: 1px;
   margin-bottom: 10px;
   padding-bottom: 2px;
-  color: rgb(74, 74, 74);
-  border-radius: 10px;
-  box-shadow: 2px 2px grey;
   min-height: fit-content;
 }
 .name-pic {
@@ -65,9 +65,9 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: grey;
-  box-shadow: 2px 2px rgb(247, 236, 236);
-  color: rgb(247, 236, 236);
+  background-color: #9ba4b4;
+
+  color: #f1f6f9;
   border-radius: 5px;
   padding: 10px 5px 2px 5px;
   width: 90%;
@@ -81,16 +81,16 @@ a {
 
 .line {
   width: 95%;
-  border-bottom: 2px solid rgb(247, 236, 236);
+  color: #f1f6f9;
+  border-bottom: 2px solid #f1f6f9;
   margin-bottom: 10px;
 }
 
 .contact-detail {
-  color: rgb(96, 94, 94);
-  background-color: rgb(247, 236, 236);
+  color: #14274e;
+  background-color: #f1f6f9;
   border-radius: 5px;
   padding: 2px 2px 2px 2px;
-  box-shadow: 2px 2px lightgray;
   margin-bottom: 10px;
   margin-top: 5px;
   width: 90%;
@@ -105,9 +105,9 @@ a {
 
   margin-left: 20px;
   margin-top: 10px;
-  box-shadow: 2px 2px grey;
+
   border-radius: 10px;
-  background-color: rgb(247, 236, 236);
+  background-color: transparent;
   box-sizing: border-box;
 
   height: fit-content;
@@ -127,7 +127,7 @@ a {
   padding: 30px;
   width: 100%;
   height: fit-content;
-  background-color: rgb(247, 236, 236);
+  background-color: transparent;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -148,7 +148,7 @@ header {
   border: none;
   box-shadow: 2px 2px grey;
   border-radius: 10px;
-  color: grey;
+  color: #9ba4b4;
   margin-left: 20px;
 }
 
@@ -162,7 +162,7 @@ header {
   width: 100%;
   height: fit-content;
   padding-bottom: 10px;
-  background-color: rgb(247, 236, 236);
+  background-color: transparent;
   box-sizing: border-box;
 }
 
@@ -189,12 +189,19 @@ header {
   gap: 20px;
   font-weight: 700;
   color: rgb(247, 236, 236);
-  background-color: grey;
-  box-shadow: 2px 2px lightgray;
+  background-color: #9ba4b4;
+  box-shadow: 2px 2px #9ba4b4;
   padding: 10px;
   border-radius: 10px;
   min-height: 90px;
   min-width: 210px;
+}
+
+.englishButton {
+  margin-top: 10px !important;
+  margin-right: 10px !important;
+  background-color: transparent !important;
+  color: #14274e !important;
 }
 
 .resultButton {
@@ -202,17 +209,23 @@ header {
   width: 90%;
   display: flex;
   flex-direction: column;
+  background-color: #394867 !important;
+}
+
+.sortButton {
+  background-color: #394867 !important;
 }
 
 .showMore {
   font-size: 80%;
+  color: #f1f6f9;
 }
 
 h1 {
   font-size: 36px;
-  background-color: grey;
-  box-shadow: 5px 5px lightgray;
-  color: rgb(247, 236, 236);
+  background-color: #394867;
+  box-shadow: 2px 2px #9ba4b4;
+  color: #f1f6f9;
   border-radius: 5px;
   padding: 2px 5px 2px 5px;
   display: flex;
@@ -226,6 +239,7 @@ p {
   margin-left: 2%;
   font-weight: 400;
   margin-top: 1%;
+  color: #14274e;
 }
 
 h2 {
@@ -235,9 +249,8 @@ h2 {
   padding: 5px;
   font-size: 32px;
   margin-bottom: 1%;
-  background-color: grey;
-  box-shadow: 5px 5px lightgray;
-  color: rgb(247, 236, 236);
+
+  color: #f1f6f9;
   border-radius: 5px;
 }
 
@@ -254,16 +267,17 @@ h4 {
   margin-left: 4%;
   font-size: 20px;
   margin-bottom: 6%;
+  color: #f1f6f9;
 }
 
 .profile-img {
   margin-top: 3%;
   margin-left: 6%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   border-radius: 50%;
   width: 60%;
-  border: 1px solid rgb(247, 236, 236);
-  box-shadow: 2px 2px grey;
+  border: 1px solid #f1f6f9;
+  box-shadow: 2px 2px #9ba4b4;
 }
 
 .weather-api {
@@ -278,9 +292,7 @@ h4 {
   border-radius: 10px;
   gap: 5px;
   width: 70%;
-
-  background-color: rgb(247, 236, 236);
-  box-shadow: 2px 2px grey;
+  background-color: transparent;
 }
 
 .weather-data-card {
@@ -289,7 +301,7 @@ h4 {
   justify-content: center;
   align-items: flex-start;
   height: 95%;
-  background-color: rgb(247, 236, 236);
+  background-color: #f1f6f9;
 }
 
 .weather-data {
@@ -308,15 +320,15 @@ h4 {
   padding: 10px;
   border-radius: 10px;
   margin-top: 10px;
-  background-color: rgb(172, 170, 170);
-  box-shadow: 5px 5px grey;
-  color: rgb(247, 236, 236);
+  background-color: #9ba4b4;
+  box-shadow: 5px 5px #9ba4b4;
+  color: #f1f6f9;
 }
 
 .city-name {
-  color: #ffffff;
-  background-color: grey;
-  box-shadow: 5px 5px lightgray;
+  color: #f1f6f9;
+  background-color: #394867;
+  box-shadow: 5px 5px #9ba4b4;
   border-radius: 10px;
   padding-right: 20px;
   padding-left: 20px;
@@ -338,7 +350,7 @@ h4 {
   width: 100%;
   padding: 10px;
   background-color: transparent;
-  color: white;
+  color: #f1f6f9;
   height: 55%;
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
@@ -351,7 +363,7 @@ input:focus {
 }
 
 .city-input ::placeholder {
-  color: #ffffff;
+  color: #f1f6f9 !important;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -371,13 +383,13 @@ input:focus {
   border-radius: 30px;
   margin-right: 10px;
   padding: 5px;
-  border: 1px solid white;
-  box-shadow: 2px 2px grey;
+  border: 1px solid #f1f6f9;
+  box-shadow: 2px 2px #394867;
 }
 
 .search-icon:active {
   border: 0;
-  box-shadow: 2px 2px grey;
+  box-shadow: 2px 2px #9ba4b4;
 }
 
 .search-div {
@@ -396,14 +408,14 @@ input:focus {
   height: 10vh;
   display: flex;
   border-radius: 10px;
-  background-color: lightgrey;
+  background-color: #9ba4b4;
   width: 100%;
   justify-content: center;
   align-items: center;
   font-size: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 625px) {
   h1 {
     font-size: 24px;
   }
@@ -449,6 +461,7 @@ input:focus {
   .englishButton {
     margin-top: 10px !important;
     margin-right: 10px !important;
+    background-color: transparent !important;
   }
 
   .contact {

@@ -15,6 +15,9 @@ function WeatherApi({english, handleClick}) {
 
     useEffect(() => {console.log(cities)}, [cities])
 
+    
+      
+
     useEffect(() => {
         if(search.length > 2) {
           fetch(`https://api.weatherapi.com/v1/search.json?key=4a718d955edf422ca3c80905232501&q=${search}`)
@@ -24,8 +27,12 @@ function WeatherApi({english, handleClick}) {
           .then((data) => {
             setCities(data)
           })
-        }
+        } 
       }, [search])
+
+     
+
+      
 
       useEffect(() => {
         console.log(weatherData)
@@ -42,7 +49,7 @@ function WeatherApi({english, handleClick}) {
             .then((data) => {
               setWeatherData(data)
             })
-        }
+        } 
       }, [buttonClick])
 
   return (

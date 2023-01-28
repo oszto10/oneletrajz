@@ -49,7 +49,7 @@ function StarWars({english, handleClick}) {
         <h1>Star Wars - Cast</h1>
           <header>
         <input placeholder='Search' className='starwars-input'  value={filter} onChange={(event)=>{setFilter(event.target.value)}}/>
-        <Button onClick={()=>{
+        <Button className='sortButton' onClick={()=>{
         sortBy === "asc" ? setSortBy("desc") : setSortBy("asc");
     }} variant="contained">Sort by name</Button>
     </header>
