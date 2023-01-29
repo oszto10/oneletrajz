@@ -12,10 +12,9 @@ function WeatherApi({english, handleClick}) {
     const [cities, setCities] = useState([])
     const [weatherData, setWeatherData] = useState(null)
     const [buttonClick, setButtonClick] = useState(0)
+    
 
     useEffect(() => {console.log(cities)}, [cities])
-
-    
       
 
     useEffect(() => {
@@ -26,6 +25,7 @@ function WeatherApi({english, handleClick}) {
           })
           .then((data) => {
             setCities(data)
+           
           })
         } 
       }, [search])

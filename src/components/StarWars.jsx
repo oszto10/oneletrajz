@@ -46,16 +46,25 @@ function StarWars({english, handleClick}) {
         <KepEsKapcsolat handleClick={handleClick} english={english}/>
         <div className='bemutatkozas'>
         <div className="actors">
+        {english && <>
         <h1>Star Wars - Cast</h1>
           <header>
         <input placeholder='Search' className='starwars-input'  value={filter} onChange={(event)=>{setFilter(event.target.value)}}/>
         <Button className='sortButton' onClick={()=>{
         sortBy === "asc" ? setSortBy("desc") : setSortBy("asc");
     }} variant="contained">Sort by name</Button>
-    </header>
+    </header></>}
+    {!english && <>
+        <h1>Star Wars - Szereplők</h1>
+          <header>
+        <input placeholder='Keresés' className='starwars-input'  value={filter} onChange={(event)=>{setFilter(event.target.value)}}/>
+        <Button className='sortButton' onClick={()=>{
+        sortBy === "asc" ? setSortBy("desc") : setSortBy("asc");
+    }} variant="contained">Rendezd név szerint</Button>
+    </header></>}
         {people.length > 0 ? (
           <>
-        <Actors filter={filter} people={people}/>
+        <Actors filter={filter} people={people} handleClick={handleClick} english={english}/>
         </> ) : (
           <LoadingMask />
         )}

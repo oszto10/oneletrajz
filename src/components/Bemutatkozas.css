@@ -352,10 +352,15 @@ h4 {
   background-color: transparent;
   color: #f1f6f9;
   height: 55%;
-  font-size: 40px;
+  font-size: 25px;
   font-family: "Open Sans", sans-serif;
   padding-left: 50px;
   text-shadow: 2px 2px 2px #aaa8a8;
+}
+
+.city-search::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input:focus {
@@ -365,6 +370,7 @@ input:focus {
 .city-input ::placeholder {
   color: #f1f6f9 !important;
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
 }
 
 .search-button {

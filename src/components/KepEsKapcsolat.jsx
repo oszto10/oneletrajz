@@ -12,11 +12,8 @@ function KepEsKapcsolat(english, handleClick) {
     <h4>FRONTEND DEVELOPER</h4>
     </div>
     <div className="contact">
-    {english && <>
-    <h3 className='contact-detail'><b>Phone number:</b></h3> </>}
-    {!english && <>
-    <h3 className='contact-detail'><b>Telefonszám:</b></h3> </>}
-    <h3 className='line'>+3620/931-81-36</h3>
+    
+    <h3 className='contact-detail'><b>Phone number:</b></h3> 
   
     <h3 className='contact-detail'><b>Email:</b></h3>
     <h3 className='line'>mark.csaszarnagy@gmail.com</h3>
