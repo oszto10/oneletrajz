@@ -14,16 +14,17 @@ function KepEsKapcsolat(english, handleClick) {
     <div className="contact">
     
     <h3 className='contact-detail'><b>Phone number:</b></h3> 
+    <h3 className='line'>+36/20-931-8136</h3> 
   
     <h3 className='contact-detail'><b>Email:</b></h3>
     <h3 className='line'>mark.csaszarnagy@gmail.com</h3>
 
     <h3 className='contact-detail'><b>LinkedIn:</b></h3>
-    <h3><a href="https://www.linkedin.com/in/mark-csaszar-nagy/">linkedin.com/in/mark.csaszar-nagy/</a></h3> 
+    <h3 className='line'><a href="https://www.linkedin.com/in/mark-csaszar-nagy/">linkedin.com/in/mark.csaszar-nagy/</a></h3> 
 
     
     <h3 className='contact-detail'><b>GitHub:</b></h3>
-    <h3><a href="https://github.com/oszto10">https://github.com/oszto10</a></h3>
+    <h3 ><a href="https://github.com/oszto10">https://github.com/oszto10</a></h3>
     
     
     </div>

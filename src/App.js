@@ -6,6 +6,7 @@ import NyelvismeretEsErossegek from "./components/NyelvismeretEsErossegek";
 import StarWars from "./components/StarWars";
 import { useState } from "react";
 import WeatherApi from "./components/WeatherApi";
+import Calculator from "./components/Calculator";
 
 function App() {
   const [english, setEnglish] = useState(true);
@@ -52,6 +53,10 @@ function App() {
           <Route
             path="/weatherapi"
             element={<WeatherApi handleClick={handleClick} english={english} />}
+          />
+          <Route
+            path="/calculator"
+            element={<Calculator handleClick={handleClick} english={english} />}
           />
         </Routes>
       </BrowserRouter>
