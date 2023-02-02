@@ -1,8 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import KepEsKapcsolat from './KepEsKapcsolat';
 import Navbar from './Navbar';
 
-function Calculator(english, handleClick) {
+function Calculator({english, handleClick}) {
+
+const [buttonValue, setButtonValue] = useState ("")
+
+const operators = ["-", "+", "*", "/", "."]
+
+const handleClick2 = (e) => {
+    if (buttonValue === "+") {return "0"}
+    setButtonValue(buttonValue.concat(e.target?.name))
+}
+
+
+
+const clearButton = () => {
+    setButtonValue("")
+}
+
+const delButton = () => {
+    setButtonValue(buttonValue?.slice(0, -1))
+}
+
+const calcNumber = () => { 
+    try {
+    setButtonValue(eval(buttonValue).toString())
+}catch (error) {
+    setButtonValue("error")
+}
+}
+
+
+
   return (
 
     <div className='root'>
@@ -11,30 +41,26 @@ function Calculator(english, handleClick) {
             <KepEsKapcsolat handleClick={handleClick} english={english}/>
             <div className='bemutatkozas'>
                 <div className='calculator'>
-                    <div className="screen">
-                        <div className="screen-top"></div>
-                        <div className="screen-bottom"></div>
-                </div>
+                    <input  type="text" maxLength={5} className="screen" value={buttonValue || "0" } onChange={handleClick2}/>
                 <div className="calc-buttons">
-                    <button className='calc-button' >AC</button>
-                    <button className='calc-button' >C</button>
-                    <button className='calc-button'>Del</button>
-                    <button className='calc-button'>/</button>
-                        <button className='calc-button' >1</button>
-                        <button className='calc-button'>2</button>
-                        <button className='calc-button'>3</button>
-                        <button className='calc-button' >*</button>
-                        <button className='calc-button'>4</button>
-                        <button className='calc-button'>5</button>
-                        <button className='calc-button'>6</button>
-                        <button className='calc-button' >-</button>
-                        <button className='calc-button'>7</button>
-                        <button className='calc-button'>8</button>
-                        <button className='calc-button'>9</button>
-                        <button className='calc-button' >+</button>
-                        <button className='calc-button'>.</button>
-                        <button className='calc-button'>0</button>
-                        <button className='equal-button'>=</button>
+                    <button onClick={clearButton} className='ac-button' >AC</button>
+                    <button onClick={delButton} className='calc-button2'>Del</button>
+                    <button name="/" onClick={handleClick2} className='calc-button2'>/</button>
+                        <button name="1" onClick={handleClick2} className='calc-button' >1</button>
+                        <button name="2" onClick={handleClick2} className='calc-button'>2</button>
+                        <button name="3" onClick={handleClick2} className='calc-button'>3</button>
+                        <button name="*" onClick={handleClick2} className='calc-button2'>*</button>
+                        <button name="4" onClick={handleClick2} className='calc-button'>4</button>
+                        <button name="5" onClick={handleClick2} className='calc-button'>5</button>
+                        <button name="6" onClick={handleClick2} className='calc-button'>6</button>
+                        <button name="-" onClick={handleClick2} className='calc-button2'>-</button>
+                        <button name="7" onClick={handleClick2} className='calc-button'>7</button>
+                        <button name="8" onClick={handleClick2} className='calc-button'>8</button>
+                        <button name="9" onClick={handleClick2} className='calc-button'>9</button>
+                        <button name="+" onClick={handleClick2} className='calc-button2'>+</button>
+                        <button name="0" onClick={handleClick2} className='zero-button'>0</button>
+                        <button name="." onClick={handleClick2} className='calc-button'>.</button>
+                        <button name="=" onClick={calcNumber} className='calc-button2'>=</button>
 
                     </div>
 
