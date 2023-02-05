@@ -39,7 +39,7 @@ const calcNumber = () => {
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
             <KepEsKapcsolat handleClick={handleClick} english={english}/>
-            <div className='bemutatkozas'>
+            <div className='calculator-body'>
                 <div className='calculator'>
                     <input  type="text" maxLength={5} className="screen" value={buttonValue || "0" } onChange={handleClick2}/>
                 <div className="calc-buttons">
