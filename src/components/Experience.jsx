@@ -1,15 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar';
-import './Bemutatkozas.css'
-import './Navbar.css'
-import KepEsKapcsolat from './KepEsKapcsolat';
+import Contact from './Contact';
 
-function MunkaTapasztalat({english, handleClick}) {
+function Experience({english, handleClick}) {
   return (
     <div className='root'>
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-        <KepEsKapcsolat handleClick={handleClick} english={english}/>
+        <Contact />
         
         <div className='bemutatkozas'>
        
@@ -59,4 +57,4 @@ function MunkaTapasztalat({english, handleClick}) {
   )
 }
 
-export default MunkaTapasztalat
+export default Experience

@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Bemutatkozas from "./components/Bemutatkozas";
-import MunkaTapasztalat from "./components/MunkaTapasztalat";
-import NyelvismeretEsErossegek from "./components/NyelvismeretEsErossegek";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
 import StarWars from "./components/StarWars";
 import { useState } from "react";
 import WeatherApi from "./components/WeatherApi";
 import Calculator from "./components/Calculator";
+import Introduction from "./components/Introduction";
 
 function App() {
   const [english, setEnglish] = useState(true);
@@ -28,23 +28,16 @@ function App() {
           <Route
             path="/"
             element={
-              <Bemutatkozas handleClick={handleClick} english={english} />
+              <Introduction handleClick={handleClick} english={english} />
             }
           />
           <Route
-            path="/tapasztalat"
-            element={
-              <MunkaTapasztalat handleClick={handleClick} english={english} />
-            }
+            path="/experience"
+            element={<Experience handleClick={handleClick} english={english} />}
           />
           <Route
-            path="/tanulmanyok&erossegek"
-            element={
-              <NyelvismeretEsErossegek
-                handleClick={handleClick}
-                english={english}
-              />
-            }
+            path="/education"
+            element={<Education handleClick={handleClick} english={english} />}
           />
           <Route
             path="/starwars"

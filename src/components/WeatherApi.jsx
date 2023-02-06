@@ -1,10 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import KepEsKapcsolat from './KepEsKapcsolat';
+import Contact from './Contact';
 import WeatherCard from './WeatherCard';
 import WeatherSearch from './WeatherSearch';
 import Navbar from './Navbar';
-import './Bemutatkozas.css'
 
 function WeatherApi({english, handleClick}) {
 
@@ -57,7 +56,7 @@ function WeatherApi({english, handleClick}) {
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
     
-        <KepEsKapcsolat handleClick={handleClick} english={english}/>
+        <Contact />
         <div className='weather-api'>
         <WeatherSearch handleClick={handleClick} english={english} setSearch={setSearch} cities={cities} search={search} setButtonClick={setButtonClick}/>
       {weatherData && <>

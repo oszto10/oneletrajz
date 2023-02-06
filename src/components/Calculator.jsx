@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import KepEsKapcsolat from './KepEsKapcsolat';
+import Contact from './Contact';
 import Navbar from './Navbar';
 
 function Calculator({english, handleClick}) {
 
 const [buttonValue, setButtonValue] = useState ("")
 
-const operators = ["-", "+", "*", "/", "."]
 
 const handleClick2 = (e) => {
     if (buttonValue === "+") {return "0"}
@@ -38,7 +37,7 @@ const calcNumber = () => {
     <div className='root'>
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-            <KepEsKapcsolat handleClick={handleClick} english={english}/>
+            <Contact />
             <div className='calculator-body'>
                 <div className='calculator'>
                     <input  type="text" maxLength={5} className="screen" value={buttonValue || "0" } onChange={handleClick2}/>

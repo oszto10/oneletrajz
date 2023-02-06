@@ -1,9 +1,9 @@
 import React from 'react'
-import './Bemutatkozas.css';
 
-function DropdownItem({english, handleClick}) {
+
+function DropdownItem({english}) {
   return (
-    <div className='dropdown-item'>
+    <div className='dropdown-item' >
        
        {english && <><h2 className='dropdown-item-row'> <a href="/starwars"> Star Wars</a></h2>
        <h2 className='dropdown-item-row'> <a href="/calculator">Calculator</a></h2>

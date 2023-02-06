@@ -1,21 +1,16 @@
 import React from 'react'
-import './Bemutatkozas.css';
-import KepEsKapcsolat from './KepEsKapcsolat';
+import Contact from './Contact';
 import Navbar from './Navbar';
 
 
-
-
-
-
-function Bemutatkozas({english, handleClick}) {
+function Introduction({english, handleClick}) {
 
   return (
     
     <div className='root'>
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-        <KepEsKapcsolat handleClick={handleClick} english={english}/>
+        <Contact handleClick={handleClick} english={english}/>
         <div className='bemutatkozas'>
         
         <div className="bemutatkozas-szoveg">
@@ -49,4 +44,4 @@ function Bemutatkozas({english, handleClick}) {
   )
 }
 
-export default Bemutatkozas
+export default Introduction

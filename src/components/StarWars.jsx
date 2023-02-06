@@ -2,10 +2,9 @@ import React, { useEffect } from 'react'
 import { useState } from "react";
 import Actors from './Actors';
 import Navbar from './Navbar';
-import './Bemutatkozas.css'
 import { Button } from '@mui/material/'
 import LoadingMask from './LoadingMask';
-import KepEsKapcsolat from './KepEsKapcsolat';
+import Contact from './Contact';
 
 
 function StarWars({english, handleClick}) {
@@ -43,7 +42,7 @@ function StarWars({english, handleClick}) {
     <div className='root'>
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-        <KepEsKapcsolat handleClick={handleClick} english={english}/>
+        <Contact />
         <div className='bemutatkozas'>
         <div className="actors">
         {english && <>

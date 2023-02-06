@@ -1,16 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar';
-import './Bemutatkozas.css'
-import './Navbar.css'
-import KepEsKapcsolat from './KepEsKapcsolat';
+import Contact from './Contact';
 
 
-function NyelvismeretEsErossegek({english, handleClick}) {
+function Education({english, handleClick}) {
   return (
     <div className='root'>
        <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-        <KepEsKapcsolat handleClick={handleClick} english={english}/>
+        <Contact />
         <div className='bemutatkozas'>
        
 
@@ -64,4 +62,4 @@ function NyelvismeretEsErossegek({english, handleClick}) {
   )
 }
 
-export default NyelvismeretEsErossegek
+export default Education

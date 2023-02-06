@@ -1,6 +1,6 @@
 import React from 'react'
 
-function WeatherCard({weatherData, english, handleClick}) {
+function WeatherCard({weatherData, english}) {
   return (
     <div className='weather-data-card' >
         <div className='weather-data' >

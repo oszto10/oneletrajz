@@ -1,5 +1,4 @@
 import React from 'react'
-import './Bemutatkozas.css'
 import { Button } from '@mui/material/'
 import { useState } from "react";
 
