@@ -296,8 +296,8 @@ header {
 }
 
 .englishButton {
-  margin-top: 10px !important;
-  margin-right: 10px !important;
+  margin-top: 5px !important;
+  margin-right: 5px !important;
   background-color: #14274e !important;
   color: #f1f6f9 !important;
 }
@@ -463,6 +463,10 @@ h4 {
   font-family: "Open Sans", sans-serif;
   padding-left: 50px;
   text-shadow: 2px 2px 2px #aaa8a8;
+}
+
+.city-input::placeholder {
+  color: #f1f6f9;
 }
 
 .city-search::-webkit-inner-spin-button {
@@ -737,6 +741,10 @@ input:focus {
 }
 
 @media only screen and (max-width: 715px) {
+  .dropdown-item {
+    right: 15%;
+  }
+
   .calc-buttons {
     flex-wrap: wrap;
   }
@@ -791,9 +799,8 @@ input:focus {
   }
 
   .englishButton {
-    margin-top: 10px !important;
-    margin-right: 10px !important;
-    background-color: transparent !important;
+    margin-top: 5px !important;
+    margin-right: 5px !important;
   }
 
   .contact {
@@ -842,7 +849,41 @@ input:focus {
   }
 
   .englishButton {
-    margin-top: 10px !important;
-    margin-right: 10px !important;
+    margin-top: 5px !important;
+    margin-right: 5px !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .dropdown-item {
+    right: 5px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .dropdown-item {
+    right: 60%;
+    top: 14%;
+  }
+}
+
+@media only screen and (max-width: 279px) {
+  .dropdown-item {
+    right: 30%;
+    top: 14%;
+  }
+}
+
+@media only screen and (max-width: 231px) {
+  .dropdown-item {
+    right: 0;
+    top: 14%;
+  }
+}
+
+@media only screen and (max-width: 194px) {
+  .dropdown-item {
+    right: 40%;
+    top: 20%;
   }
 }

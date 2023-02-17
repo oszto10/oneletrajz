@@ -18,7 +18,7 @@ function WeatherApi({english, handleClick}) {
 
     useEffect(() => {
         if(search.length > 2) {
-          fetch(`https://api.weatherapi.com/v1/search.json?key=4a718d955edf422ca3c80905232501&q=${search}`)
+          fetch(`https://api.weatherapi.com/v1/search.json?key=1eb43134033c41ab8b8151501230802&q=${search}`)
           .then((response) => {
             return response.json()
           })
@@ -40,7 +40,7 @@ function WeatherApi({english, handleClick}) {
       useEffect(() => {
         if(buttonClick !== 0){
           fetch(
-            `https://api.weatherapi.com/v1/current.json?key=4a718d955edf422ca3c80905232501&q=${search}&aqi=no`
+            `https://api.weatherapi.com/v1/current.json?key=1eb43134033c41ab8b8151501230802&q=${search}&aqi=no`
           )
             .then((response) => {
               return response.json()
