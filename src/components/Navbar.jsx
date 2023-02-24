@@ -32,7 +32,7 @@ window.addEventListener("click", (e) => {
         <Link to="/experience">Tapasztalat</Link>
         <Link to="/education">Tanulmányok</Link>
      
-        <h3 onClick={() => setOpenMenu((prev) => !prev)}>Projektek</h3>
+        <h3 ref={closeMenuRef} onClick={() => setOpenMenu((prev) => !prev)}>Projektek</h3>
         {openMenu && <DropdownItem english={english} handleClick={handleClick}/>}
         </>}
         

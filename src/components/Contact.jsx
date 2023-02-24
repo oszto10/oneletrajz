@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Contact(english) {
+function Contact({english, handleClick}) {
   return (
     
     <div className='kepkapcsolat'>

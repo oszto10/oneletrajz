@@ -56,7 +56,7 @@ function WeatherApi({english, handleClick}) {
         <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
     
-        <Contact />
+        <Contact handleClick={handleClick} english={english}/>
         <div className='weather-api'>
         <WeatherSearch handleClick={handleClick} english={english} setSearch={setSearch} cities={cities} search={search} setButtonClick={setButtonClick}/>
       {weatherData && <>

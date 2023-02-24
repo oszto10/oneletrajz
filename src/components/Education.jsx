@@ -8,7 +8,7 @@ function Education({english, handleClick}) {
     <div className='root'>
        <Navbar handleClick={handleClick} english={english}></Navbar>
         <div className='container'>
-        <Contact />
+        <Contact handleClick={handleClick} english={english}/>
         <div className='bemutatkozas'>
        
 
