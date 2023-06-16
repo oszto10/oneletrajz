@@ -9,7 +9,7 @@ function Contact({english, handleClick}) {
     {english && <><div className="name-pic">
     <img className='profile-img' src="images/profil4.jpg" alt="profilkep"/>
     <h2>Császár-Nagy Márk</h2>
-    <h4>FRONT-END DEVELOPER</h4>
+    <h4>WEB DEVELOPER</h4>
     </div>
     <div className="contact">
     
@@ -32,7 +32,7 @@ function Contact({english, handleClick}) {
     {!english && <><div className="name-pic">
     <img className='profile-img' src="images/profil4.jpg" alt="profilkep"/>
     <h2>Császár-Nagy Márk</h2>
-    <h4>FRONTEND FEJLESZTŐ</h4>
+    <h4>WEBFEJLESZTŐ</h4>
     </div>
     <div className="contact">
     

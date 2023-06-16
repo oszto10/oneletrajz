@@ -6,6 +6,7 @@ import StarWars from "./components/StarWars";
 import { useState } from "react";
 import WeatherApi from "./components/WeatherApi";
 import Calculator from "./components/Calculator";
+import ValutaChange from "./components/ValutaChange";
 import Introduction from "./components/Introduction";
 
 function App() {
@@ -50,6 +51,12 @@ function App() {
           <Route
             path="/calculator"
             element={<Calculator handleClick={handleClick} english={english} />}
+          />
+          <Route
+            path="/valutachange"
+            element={
+              <ValutaChange handleClick={handleClick} english={english} />
+            }
           />
         </Routes>
       </BrowserRouter>

@@ -24,7 +24,7 @@ function Introduction({english, handleClick}) {
         <br />
         <br />
         In the summer of 2022, the DIGI Sport channel where I worked for thirteen years, was closed by the new owners, so I decided to enroll in Codecool’s Junior Frontend Developer course. I was finally able
-        to start building the carrier for which I have been longing for a long time. I really like the world of programming; the more I learn about it, the more I want to know.”
+        to start building the carrier for which I have been longing for a long time. At February of 2023 I've started to work at Shiwaforce as a webdeveloper. I really like the world of programming; the more I learn about it, the more I want to know.”
         </p></>}
         {!english && <><h1>Bemutatkozás</h1>
         <br />
@@ -34,10 +34,10 @@ function Introduction({english, handleClick}) {
         Ahogy teltek az évek, online újságíróként egyre jobban kezdett érdekelni a honlapok szerkesztése mellett az is, hogy miként készülnek ezek. Többször nekiálltam önszorgalomból tanulni, de a főszerkesztői pozícióm mellett ez csupán hobbi maradt.
         <br />
         <br />
-        2022 nyarán azonban megszűnt a DIGI Sport, ahol tizenhárom évig dolgoztam, így eldöntöttem, váltani szeretnék. Beiratkoztam a Codecool négy és fél hónapos intenzív frontend fejlesztői képzésére, hogy elkezdhessem felépíteni azt a karriert, amire titkon már jó ideje vágytam. Nagyon tetszik a fejlesztés világa, azt érzem, minél jobban mélyedek bele, annál többet szeretnék tudni.”
+        2022 nyarán azonban megszűnt a DIGI Sport, ahol tizenhárom évig dolgoztam, így eldöntöttem, váltani szeretnék. Beiratkoztam a Codecool négy és fél hónapos intenzív frontend fejlesztői képzésére, hogy elkezdhessem felépíteni azt a karriert, amire titkon már jó ideje vágytam. A tanfolyam után a Shiwaforce-nál sikerült elhelyezkednem webfejlesztőként. Nagyon tetszik a fejlesztés világa, azt érzem, minél jobban mélyedek bele, annál többet szeretnék tudni.”
         </p></>}
                 
-        </div>
+        </div> 
         </div>
         </div>
     </div>
