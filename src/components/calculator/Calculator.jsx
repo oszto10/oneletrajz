@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Contact from './Contact';
-import Navbar from './Navbar';
+import Contact from '../contact/Contact';
+import Navbar from '../navbar/Navbar';
 
 function Calculator({english, handleClick}) {
 

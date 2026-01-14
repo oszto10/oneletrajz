@@ -741,6 +741,48 @@ input:focus {
   font-weight: 400;
 }
 
+.exchangeRate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 5px;
+  width: 70%;
+  background-color: transparent;
+}
+
+.exchangeRateContainer {
+  background-color: #f1f5fa;
+  border-radius: 16px;
+  width: 400px;
+}
+
+.currencyRow {
+  display: flex;
+  gap: 32px;
+  padding: 8px 16px;
+}
+
+.currencyRow:first-child {
+  background-color: #14274e;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  color: #fff;
+}
+
+.currencyRow:nth-child(even) {
+  background-color: #b0b6c2;
+}
+
+.currencyName {
+  width: 200px;
+}
+
 @media only screen and (max-width: 715px) {
   .dropdown-item {
     right: 15%;

@@ -1,13 +1,13 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import StarWars from "./components/StarWars";
+import Experience from "./components/experience/Experience";
+import Education from "./components/education/Education";
+import StarWars from "./components/starWars/StarWars";
 import { useState } from "react";
-import WeatherApi from "./components/WeatherApi";
-import Calculator from "./components/Calculator";
-import ValutaChange from "./components/ValutaChange";
-import Introduction from "./components/Introduction";
+import WeatherApi from "./components/weatherApi/WeatherApi";
+import Calculator from "./components/calculator/Calculator";
+import ExchangeRate from "./components/exchangeRate/ExchangeRate";
+import Introduction from "./components/introduction/Introduction";
 
 function App() {
   const [english, setEnglish] = useState(true);
@@ -53,9 +53,9 @@ function App() {
             element={<Calculator handleClick={handleClick} english={english} />}
           />
           <Route
-            path="/valutachange"
+            path="/exchangerate"
             element={
-              <ValutaChange handleClick={handleClick} english={english} />
+              <ExchangeRate handleClick={handleClick} english={english} />
             }
           />
         </Routes>

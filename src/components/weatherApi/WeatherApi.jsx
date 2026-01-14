@@ -1,9 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import Contact from './Contact';
+import Contact from '../contact/Contact';
 import WeatherCard from './WeatherCard';
 import WeatherSearch from './WeatherSearch';
-import Navbar from './Navbar';
+import Navbar from '../navbar/Navbar';
 
 function WeatherApi({english, handleClick}) {
 

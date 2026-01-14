@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useState } from "react";
 import Actors from './Actors';
-import Navbar from './Navbar';
+import Navbar from '../navbar/Navbar';
+import Contact from '../contact/Contact';
 import { Button } from '@mui/material/'
-import LoadingMask from './LoadingMask';
-import Contact from './Contact';
+import LoadingMask from '../loadingMask/LoadingMask';
 
 
 function StarWars({english, handleClick}) {

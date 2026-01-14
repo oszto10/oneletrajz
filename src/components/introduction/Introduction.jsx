@@ -1,6 +1,6 @@
 import React from 'react'
-import Contact from './Contact';
-import Navbar from './Navbar';
+import Navbar from '../navbar/Navbar';
+import Contact from '../contact/Contact';
 
 
 function Introduction({english, handleClick}) {
@@ -28,7 +28,7 @@ function Introduction({english, handleClick}) {
         </p></>}
         {!english && <><h1>Bemutatkozás</h1>
         <br />
-        <p>“Fiatalabb koromban az élsport volt az egyik legfontosabb dolog az életemben, így a főiskolai tanulmányaim alatt a sportújságírásban találtam meg azokat a szakmai kihívásokat, amelyek mentén szerettem volna felépíteni a karrieremet. 
+        <p>“rvtrt5v Fiatalabb koromban az élsport volt az egyik legfontosabb dolog az életemben, így a főiskolai tanulmányaim alatt a sportújságírásban találtam meg azokat a szakmai kihívásokat, amelyek mentén szerettem volna felépíteni a karrieremet. 
         <br />
         <br />
         Ahogy teltek az évek, online újságíróként egyre jobban kezdett érdekelni a honlapok szerkesztése mellett az is, hogy miként készülnek ezek. Többször nekiálltam önszorgalomból tanulni, de a főszerkesztői pozícióm mellett ez csupán hobbi maradt.

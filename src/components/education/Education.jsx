@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar';
-import Contact from './Contact';
+import Navbar from '../navbar/Navbar';
+import Contact from '../contact/Contact';
 
 
 function Education({english, handleClick}) {

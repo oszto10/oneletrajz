@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar';
-import Contact from './Contact';
+import Navbar from '../navbar/Navbar';
+import Contact from '../contact/Contact';
 
 function Experience({english, handleClick}) {
   return (
@@ -14,7 +14,7 @@ function Experience({english, handleClick}) {
         <div className="bemutatkozas-szoveg">
         {english && <><h1>Experience</h1>
         <p><b>Shiwaforce - Webdeveloper</b> - <i>February 2023 - </i></p>
-             <p>Skills: CSS, PUG, HTML, XML, XPARH, XSLT</p>
+             <p>Skills: CSS, SCSS, PUG, HTML, XML, XPATH, XSLT, FIGMA, VUE.JS</p>
           <br/>
         <p><b>DIGI Sport - Editor-in-chief</b> (digisport.hu, filmnow.hu, a digiworld.hu, a digilife.hu, digianimalword.hu) - <i>July 2009 – September 2022</i></p>
            <p><b><i>Main tasks:</i></b> <br />
@@ -35,7 +35,7 @@ function Experience({english, handleClick}) {
           {!english && <><h1>Tapasztalat</h1>
          
         <p><b>Shiwaforce - Webfejlesztő</b> - <i>February 2023 - </i></p>
-              <p>Skills: CSS, PUG, HTML, XML, XPARH, XSLT</p>
+              <p>Skills: CSS, SCSS, PUG, HTML, XML, XPATH, XSLT, FIGMA, VUE.JS</p>
           <br/>
          <p><b>DIGI Sport - Online főszerkesztő</b> (digisport.hu, filmnow.hu, a digiworld.hu, a digilife.hu, digianimalword.hu) - <i>2009.07 – 2022.09</i></p>
            <p><b><i>Főbb feladatok:</i></b> <br />
