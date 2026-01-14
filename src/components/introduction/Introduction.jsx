@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../navbar/Navbar';
 import Contact from '../contact/Contact';
+import './Introduction.css'
 
 
 function Introduction({english, handleClick}) {

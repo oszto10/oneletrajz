@@ -4,6 +4,7 @@ import Contact from '../contact/Contact';
 import WeatherCard from './WeatherCard';
 import WeatherSearch from './WeatherSearch';
 import Navbar from '../navbar/Navbar';
+import './WeatherApi.css'
 
 function WeatherApi({english, handleClick}) {
 

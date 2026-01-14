@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Contact from '../contact/Contact';
 import Navbar from '../navbar/Navbar';
+import './Calculator.css'
 
 function Calculator({english, handleClick}) {
 

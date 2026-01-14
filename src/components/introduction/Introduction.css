@@ -1,0 +1,51 @@
+.bemutatkozas {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73%;
+    transition: 1.5s;
+    margin-left: 20px;
+    margin-top: 10px;
+  
+    border-radius: 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+  
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(74, 74, 74);
+    padding-right: 20px;
+    min-width: 260px;
+  }
+  
+.bemutatkozas-szoveg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 715px) {
+
+    .bemutatkozas {
+        width: 98%;
+        margin: 0;
+        padding-right: 0;
+        margin-left: 1%;
+    }
+
+    .bemutatkozas-szoveg {
+        width: 100%;
+        margin: 0;
+    }
+}

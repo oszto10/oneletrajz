@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from '../navbar/Navbar';
 import Contact from '../contact/Contact';
+import "./ExchangeRate.css";
 
 export default function ExchangeRateValue({ handleClick, english }) {
   const [usdHuf, setUsdHuf] = useState(null);

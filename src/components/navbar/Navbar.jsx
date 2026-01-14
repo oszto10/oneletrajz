@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import {Link} from 'react-router-dom'
 import { Button } from '@mui/material';
 import DropdownItem from './DropdownItem';
+import './Navbar.css';
 
 function Navbar({english, handleClick}) {
 

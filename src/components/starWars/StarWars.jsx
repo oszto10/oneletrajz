@@ -5,6 +5,7 @@ import Navbar from '../navbar/Navbar';
 import Contact from '../contact/Contact';
 import { Button } from '@mui/material/'
 import LoadingMask from '../loadingMask/LoadingMask';
+import './StarWars.css'
 
 
 function StarWars({english, handleClick}) {

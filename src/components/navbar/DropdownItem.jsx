@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import './DropdownItem.css'
 
 
 function DropdownItem({english}) {
@@ -6,7 +8,7 @@ function DropdownItem({english}) {
     <div className='dropdown-item' >
        
        {english && <>{/* <h2 className='dropdown-item-row'> <a href="/starwars"> Star Wars</a></h2> */}
-       <h2 className='dropdown-item-row'> <a href="/calculator">Calculator</a></h2>
+       <h2 className='dropdown-item-row'> <Link to="/calculator">Calculator</Link></h2>
        <h2 className='dropdown-item-row'> <a href="/weatherapi">Weather Api</a></h2>
        <h2 className='dropdown-item-row'> <a href="/exchangerate">Exchange rate</a></h2></>}
      {!english && <>{/* <h2 className='dropdown-item-row'> <a href="/starwars"> Star Wars</a></h2> */}
