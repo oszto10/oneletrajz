@@ -1,9 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import Contact from '../contact/Contact';
 import WeatherCard from './WeatherCard';
 import WeatherSearch from './WeatherSearch';
-import Navbar from '../navbar/Navbar';
 import './WeatherApi.css'
 
 function WeatherApi({english, handleClick}) {
@@ -53,18 +51,11 @@ function WeatherApi({english, handleClick}) {
       }, [buttonClick])
 
   return (
-    <div className='root'>
-        <Navbar handleClick={handleClick} english={english}></Navbar>
-        <div className='container'>
-    
-        <Contact handleClick={handleClick} english={english}/>
-        <div className='weather-api'>
+    <div className='weather-api'>
         <WeatherSearch handleClick={handleClick} english={english} setSearch={setSearch} cities={cities} search={search} setButtonClick={setButtonClick}/>
       {weatherData && <>
         <WeatherCard handleClick={handleClick} english={english} weatherData={weatherData}/>
       </>}
-    </div>
-    </div>
     </div>
   )
 }

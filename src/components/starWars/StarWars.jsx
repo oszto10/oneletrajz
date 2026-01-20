@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from "react";
 import Actors from './Actors';
-import Navbar from '../navbar/Navbar';
-import Contact from '../contact/Contact';
 import { Button } from '@mui/material/'
 import LoadingMask from '../loadingMask/LoadingMask';
 import './StarWars.css'
@@ -38,14 +36,8 @@ function StarWars({english, handleClick}) {
           }, [sortBy])
 
   return (
-
-
-    <div className='root'>
-        <Navbar handleClick={handleClick} english={english}></Navbar>
-        <div className='container'>
-        <Contact handleClick={handleClick} english={english}/>
-        <div className='bemutatkozas'>
-        <div className="actors">
+   <div className='bemutatkozas'>
+     <div className="actors">
         {english && <>
         <h1>Star Wars - Cast</h1>
           <header>
@@ -68,9 +60,7 @@ function StarWars({english, handleClick}) {
         </> ) : (
           <LoadingMask />
         )}
-        </div>
-        </div>
-        </div>
+      </div>
     </div>
 
   )

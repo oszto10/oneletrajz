@@ -17,13 +17,11 @@ window.addEventListener("click", (e) => {
   }
 })
 
-
-
   return (
     <div className='navbar'  >
       {english && <><Link to="/">Introduction</Link>
         <Link to="/experience">Experience</Link>
-        <Link to="/education">Education</Link>
+        <Link to="/education">Education, skills</Link>
   
         <h3 ref={closeMenuRef} onClick={() => setOpenMenu((prev) => !prev)}>Projects</h3>
         {openMenu && <DropdownItem english={english} handleClick={handleClick}/>}
@@ -31,7 +29,7 @@ window.addEventListener("click", (e) => {
         </>}
         {!english && <> <Link to="/">Bemutatkozás</Link>
         <Link to="/experience">Tapasztalat</Link>
-        <Link to="/education">Tanulmányok</Link>
+        <Link to="/education">Tanulmányok, készségek</Link>
      
         <h3 ref={closeMenuRef} onClick={() => setOpenMenu((prev) => !prev)}>Projektek</h3>
         {openMenu && <DropdownItem english={english} handleClick={handleClick}/>}

@@ -1,11 +1,14 @@
 .navbar {
     display: flex;
     align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.58);
+    position: sticky;
     justify-content: space-around;
     width: 100%;
     background-color: #f1f6f9;
     border-bottom: 1px solid #9ba4b4;
     text-decoration: none;
+    top: 0;
     height: 8vh;
     font-family: "Open Sans", sans-serif;
     margin-bottom: 1%;

@@ -8,6 +8,7 @@ import WeatherApi from "./components/weatherApi/WeatherApi";
 import Calculator from "./components/calculator/Calculator";
 import ExchangeRate from "./components/exchangeRate/ExchangeRate";
 import Introduction from "./components/introduction/Introduction";
+import Layout from "./components/layout/Layout";
 
 function App() {
   const [english, setEnglish] = useState(true);
@@ -26,38 +27,40 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <Introduction handleClick={handleClick} english={english} />
-            }
-          />
-          <Route
-            path="/experience"
-            element={<Experience handleClick={handleClick} english={english} />}
-          />
-          <Route
-            path="/education"
-            element={<Education handleClick={handleClick} english={english} />}
-          />
-          <Route
-            path="/starwars"
-            element={<StarWars handleClick={handleClick} english={english} />}
-          />
-          <Route
-            path="/weatherapi"
-            element={<WeatherApi handleClick={handleClick} english={english} />}
-          />
-          <Route
-            path="/calculator"
-            element={<Calculator handleClick={handleClick} english={english} />}
-          />
-          <Route
-            path="/exchangerate"
-            element={
-              <ExchangeRate handleClick={handleClick} english={english} />
-            }
-          />
+          <Route element={<Layout english={english} handleClick={handleClick} />}>
+            <Route
+              path="/"
+              element={
+                <Introduction handleClick={handleClick} english={english} />
+              }
+            />
+            <Route
+              path="/experience"
+              element={<Experience handleClick={handleClick} english={english} />}
+            />
+            <Route
+              path="/education"
+              element={<Education handleClick={handleClick} english={english} />}
+            />
+            <Route
+              path="/starwars"
+              element={<StarWars handleClick={handleClick} english={english} />}
+            />
+            <Route
+              path="/weatherapi"
+              element={<WeatherApi handleClick={handleClick} english={english} />}
+            />
+            <Route
+              path="/calculator"
+              element={<Calculator handleClick={handleClick} english={english} />}
+            />
+            <Route
+              path="/exchangerate"
+              element={
+                <ExchangeRate handleClick={handleClick} english={english} />
+              }
+            />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

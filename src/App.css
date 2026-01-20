@@ -35,17 +35,17 @@ body {
 }
 
 h1 {
-  font-size: 36px;
-  background-color: #394867;
-  box-shadow: 2px 2px #9ba4b4;
-  color: #f1f6f9;
-  border-radius: 5px;
-  padding: 2px 5px 2px 5px;
+  font-size: 28px;
+  border-bottom: 4px solid #394867;
+  color: #394867;
   display: flex;
   margin-left: 2%;
   margin-bottom: 10px;
   margin-top: 10px;
-  animation: opacity-change 1.4s ease;
+}
+
+h1:not(:first-child) {
+  margin-top: 22px;
 }
 
 h2 {
@@ -76,20 +76,25 @@ h4 {
   color: #f1f6f9;
 }
 
-p {
-  font-size: 20px;
+.main-text {
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+ul {
+  margin-bottom: 12px;
+  padding-left: 2%;
+  width: 100%;
+}
+
+p, 
+li {
+  font-size: 18px;
   margin-left: 2%;
   font-weight: 400;
   margin-top: 1%;
   color: #14274e;
-  opacity: 1;
-  animation: opacity-change 2s ease;
-}
-
-@keyframes opacity-change {
-  40% {
-    opacity: 0.3;
-  }
+  width: 100%;
 }
 
 a {

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from '../navbar/Navbar';
-import Contact from '../contact/Contact';
 import "./ExchangeRate.css";
 
 export default function ExchangeRateValue({ handleClick, english }) {
@@ -57,12 +55,8 @@ export default function ExchangeRateValue({ handleClick, english }) {
   if (rubHuf === null) return <div>Betöltés...</div>;
 
   return (
-    <div className='root'>
-      <Navbar handleClick={handleClick} english={english}></Navbar>
-      <div className={'container'}>
-        <Contact handleClick={handleClick} english={english}/>
-        <div className={'exchangeRate'}>
-          <div className={'exchangeRateContainer'}>
+    <div className={'exchangeRate'}>
+       <div className={'exchangeRateContainer'}>
           <div className={'currencyRow'}>
               <span className="currencyName">Pénznem</span> 
               <span className="currencyValue">Érték</span> 
@@ -79,8 +73,6 @@ export default function ExchangeRateValue({ handleClick, english }) {
               <span className="currencyName">Orosz rubel</span> 
               <span className="currencyValue">{rubHuf} forint</span> 
             </div>
-          </div>
-        </div>
       </div>
     </div>
   );

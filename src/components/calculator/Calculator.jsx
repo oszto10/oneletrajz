@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Contact from '../contact/Contact';
-import Navbar from '../navbar/Navbar';
 import './Calculator.css'
 
 function Calculator({english, handleClick}) {
@@ -34,11 +33,6 @@ const calcNumber = () => {
 
 
   return (
-
-    <div className='root'>
-        <Navbar handleClick={handleClick} english={english}></Navbar>
-        <div className='container'>
-            <Contact handleClick={handleClick} english={english}/>
             <div className='calculator-body'>
                 <div className='calculator'>
                     <input  type="text" maxLength={5} className="screen" value={buttonValue || "0" } onChange={handleClick2}/>
@@ -61,13 +55,10 @@ const calcNumber = () => {
                         <button name="0" onClick={handleClick2} className='zero-button'>0</button>
                         <button name="." onClick={handleClick2} className='calc-button'>.</button>
                         <button name="=" onClick={calcNumber} className='calc-button2'>=</button>
-
                     </div>
-
                 </div>
             </div>
-        </div>
-    </div>
+
   )
 }
 
