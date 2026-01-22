@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react'
 import {Link} from 'react-router-dom'
-import { Button } from '@mui/material';
 import DropdownItem from './DropdownItem';
 import './Navbar.css';
 
@@ -35,7 +34,7 @@ window.addEventListener("click", (e) => {
         {openMenu && <DropdownItem english={english} handleClick={handleClick}/>}
         </>}
         
-        <Button className='englishButton' variant='contained' onClick={()=> handleClick(!english)}>{english ? "HUN" : "ENG"}</Button>
+        <button className='englishButton' variant='contained' onClick={()=> handleClick(!english)}>{english ? "HUN" : "ENG"}</button>
     </div>
   )
 }

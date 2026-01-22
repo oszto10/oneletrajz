@@ -13,7 +13,7 @@ header {
     width: 33%;
     border: none;
     box-shadow: 2px 2px grey;
-    border-radius: 10px;
+    border-radius: 12px;
     color: #9ba4b4;
     margin-left: 20px;
   }
@@ -58,7 +58,7 @@ header {
     background-color: #9ba4b4;
     box-shadow: 2px 2px #9ba4b4;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 12px;
     min-height: 90px;
     min-width: 210px;
   }

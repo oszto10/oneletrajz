@@ -2,8 +2,8 @@ import React from 'react'
 
 function Experience({english, handleClick}) {
   return (    
-    <div className='bemutatkozas'>
-      <div className="bemutatkozas-szoveg">
+    <div className='introduction'>
+      <div className="introduction-text">
         {english && <><h1>Experience</h1>
         <p className='main-text'><b>Shiwaforce - Webdeveloper</b> - <i>February 2023 - January 2026</i></p>
         <p><b>Performing subtasks for the creation of modules:</b></p>
@@ -38,7 +38,7 @@ function Experience({english, handleClick}) {
         </>}
           {!english && <><h1>Tapasztalat</h1>
          
-        <p className='main-text'><b>Shiwaforce - Webfejlesztő</b> - <i>2023.02 - 2026.01</i></p>
+        <p className='main-text'><b>Shiwaforce - Webfejlesztő</b> - <i>2023.02. - 2026.01.</i></p>
         <p><b>Modulok készítéséhez részfeladatok elvégzése:</b></p>
         <ul>
           <li>Sitebuildek pixelpontos elkészítése a megadott Figma-, vagy Zeplin-dizájnok alapján. Egyes esetekben megoldások javaslata a jobb végeredmény elérése érdekében. Hibajavítások a sitebuildben, amennyiben később bekerült kódrészletek szétcsúsztatták azt.</li>
@@ -48,7 +48,7 @@ function Experience({english, handleClick}) {
           <li>Csomagok kiadása Bamboo-ban a tesztelői környezetekre. Build planek elkészítése.</li>
           <li> Manuális tesztelői céges tanfolyam elvégzése. Elkészült modulok és funkciók tesztelése különböző környezeteken.</li>
          </ul>
-         <p className='main-text'><b>DIGI Sport - Online főszerkesztő, product owner</b> (digisport.hu, filmnow.hu, a digiworld.hu, a digilife.hu, digianimalword.hu) - <i>2009.07 – 2022.09</i></p>
+         <p className='main-text'><b>DIGI Sport - Online főszerkesztő, product owner</b> (digisport.hu, filmnow.hu, a digiworld.hu, a digilife.hu, digianimalword.hu) - <i>2009.07. - 2022.09.</i></p>
          <ul>
           <li>8 fős szerkesztőségi csapat vezetése, napi tartalmi és szervezési feladatok koordinálása.</li>
           <li>Több weboldal újratervezésének kreatív irányítása.</li>

@@ -6,11 +6,12 @@
     height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    gap: 5px;
-    width: 70%;
-    background-color: transparent;
+    justify-content: flex-start;
+    border-radius: 12px;
+    gap: 48px;
+    width: 60%;
+    padding: 32px;
+    background-color: #fff;
   }
   
   .exchangeRateContainer {

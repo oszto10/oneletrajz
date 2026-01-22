@@ -52,6 +52,10 @@ function WeatherApi({english, handleClick}) {
 
   return (
     <div className='weather-api'>
+        {english && <>
+          <h1>Weather Api</h1></>}
+        {!english && <>
+        <h1>Időjárás</h1></>}
         <WeatherSearch handleClick={handleClick} english={english} setSearch={setSearch} cities={cities} search={search} setButtonClick={setButtonClick}/>
       {weatherData && <>
         <WeatherCard handleClick={handleClick} english={english} weatherData={weatherData}/>

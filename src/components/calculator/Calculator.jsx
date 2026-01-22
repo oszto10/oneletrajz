@@ -30,16 +30,18 @@ const calcNumber = () => {
 }
 }
 
-
-
   return (
             <div className='calculator-body'>
+                {english && <>
+                    <h1>Calculator</h1></>}
+                {!english && <>
+                    <h1>Számológép</h1></>}
                 <div className='calculator'>
                     <input  type="text" maxLength={5} className="screen" value={buttonValue || "0" } onChange={handleClick2}/>
-                <div className="calc-buttons">
-                    <button onClick={clearButton} className='ac-button' >AC</button>
-                    <button onClick={delButton} className='calc-button2'>Del</button>
-                    <button name="/" onClick={handleClick2} className='calc-button2'>/</button>
+                    <div className="calc-buttons">
+                        <button onClick={clearButton} className='ac-button' >AC</button>
+                        <button onClick={delButton} className='calc-button2'>Del</button>
+                        <button name="/" onClick={handleClick2} className='calc-button2'>/</button>
                         <button name="1" onClick={handleClick2} className='calc-button' >1</button>
                         <button name="2" onClick={handleClick2} className='calc-button'>2</button>
                         <button name="3" onClick={handleClick2} className='calc-button'>3</button>

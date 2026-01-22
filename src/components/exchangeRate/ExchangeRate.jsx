@@ -56,6 +56,10 @@ export default function ExchangeRateValue({ handleClick, english }) {
 
   return (
     <div className={'exchangeRate'}>
+      {english && <>
+        <h1>Exchange Rate</h1></>}
+      {!english && <>
+        <h1>Valuta árfolyam</h1></>}
        <div className={'exchangeRateContainer'}>
           <div className={'currencyRow'}>
               <span className="currencyName">Pénznem</span> 

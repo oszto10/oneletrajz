@@ -6,7 +6,8 @@ import Contact from "../contact/Contact";
 export default function Layout({ english, handleClick }) {
   return (
     <div className='root'>
-       <Navbar english={english} handleClick={handleClick} />
+      <img src="../../../images/bg-image.png" alt="" className="bg-image" />
+      <Navbar english={english} handleClick={handleClick} />
       <div className='container'>
         <Contact english={english} handleClick={handleClick} />
         <Outlet />

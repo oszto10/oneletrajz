@@ -36,7 +36,7 @@ function StarWars({english, handleClick}) {
           }, [sortBy])
 
   return (
-   <div className='bemutatkozas'>
+   <div className='introduce'>
      <div className="actors">
         {english && <>
         <h1>Star Wars - Cast</h1>

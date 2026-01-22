@@ -2,8 +2,8 @@ import React from 'react'
 
 function Education({english, handleClick}) {
   return (
-     <div className='bemutatkozas'>
-        <div className="bemutatkozas-szoveg">
+     <div className='introduction'>
+        <div className="introduction-text">
           {english && <><h1>Education, skills</h1>
           <p><b>Codecool - Junior Frontend Developer</b> - <i>August 2022 – January 2023</i></p>
           <ul>
